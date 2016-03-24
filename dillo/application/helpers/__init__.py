@@ -199,4 +199,4 @@ def computed_user_roles():
     roles = [Role.query.filter_by(name='world').first().id]
     if current_user.is_authenticated():
         roles += current_user.role_ids
-    return roles
+    return list(set(roles))
