@@ -16,9 +16,11 @@ image you need [Docker](https://www.docker.com/).
 
 Once installed, you can simply run:
 
+should figure out where the below path should be for this tut, I had done /~/dillo
+
 ```
 docker run --entrypoint="bash" -ti --name dillo_dev -p 5000:5000 \
--v <YOUR_DILLO_CHECKOUT_PATH>:/data/git/dillo armadillica/dillo_dev
+-v /YOUR/DILLO/CHECKOUT/PATH:/data/git/dillo armadillica/dillo_dev
 ```
 
 This will download the `dillo_dev` image on your system and log you into the
