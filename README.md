@@ -24,7 +24,7 @@ docker run --entrypoint="bash" -ti --name dillo_dev -p 5000:5000 \
 ```
 
 This will download the `dillo_dev` image on your system and log you into the
-container. At that point you should run:
+container. //You will be root@randomid:/ At that point you should run:
 
 $ cd /data/git/
 $ git clone https://github.com/armadillica/dillo.git dillo
@@ -32,18 +32,21 @@ $ git clone https://github.com/armadillica/dillo.git dillo
 //virtualenv /data/venv/
 //not needed
 
+
+Inside the container at :/ run
 ```
 ./setup.sh
 ```
-
+//You will be root@randomid:/
 and follow the instructions. Once the procedure is complete, run:
 
+Inside the container at :/ run
 ```
 ./manage.sh runserver
 ```
 
 At this point Dillo is running and you can see it in your web browser.
-
+0.0.0.0:5000
 
 ## Development installation
 Dillo is a Flask application, and follows most of the typical install conventions.
