@@ -8,6 +8,7 @@ it is now available as an unbranded site for anyone to power their own community
 We warmly welcome feedback, suggestions and pull requests.
 
 
+
 ## Quick install with Docker
 Keep in mind that the current installation instructions are valid only for testing.
 A production docker image will be available soon. In order to use the docker
@@ -22,6 +23,9 @@ docker run --entrypoint="bash" -ti --name dillo_dev -p 5000:5000 \
 
 This will download the `dillo_dev` image on your system and log you into the
 container. At that point you should run:
+
+$ cd /data/git/
+$ git clone https://github.com/armadillica/dillo.git dillo
 
 ```
 ./setup.sh
