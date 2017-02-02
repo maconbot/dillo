@@ -27,7 +27,8 @@ container. At that point you should run:
 $ cd /data/git/
 $ git clone https://github.com/armadillica/dillo.git dillo
 
-virtualenv /data/venv/
+//virtualenv /data/venv/
+//not needed
 
 ```
 ./setup.sh
